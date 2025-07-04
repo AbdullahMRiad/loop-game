@@ -1,7 +1,7 @@
 export default function Sidebar({opened}:{opened:boolean}) {
     return(
-        <div className={opened ? 'h-full bg-gray-300 w-1/4' : 'h-full bg-gray-300 w-0 overflow-hidden'}>
-            <ul>
+        <div className={`transition-all h-full bg-gray-300 overflow-hidden ${opened ? "w-1/4" : "w-0"}`}>
+            <ul className="m-4 mt-24">
                 <li>test</li>
                 <li>test</li>
                 <li>test</li>
