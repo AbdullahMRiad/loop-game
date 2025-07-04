@@ -4,7 +4,8 @@ import Square from "./square";
 export default function Board() {
     const DEBUG_BOARD: Game.Board = [["X", "O", "X"], ["X", "", "X"], ["X", "O", "X"]]
     return(
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
+            <span className="text-xl mb-2">O turn</span>
             {DEBUG_BOARD.map(
                 (row, rowIndex) => (
                     <div key={rowIndex} className="flex flex-row flex-1/3">
