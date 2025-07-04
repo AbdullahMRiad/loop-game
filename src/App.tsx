@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className='flex flex-row items-center justify-center w-screen h-full'>
-      <Button className='w-8 h-8 text-lg m-2 fixed top-2 left-2'
+      <Button className='w-8 h-8 text-lg m-2 fixed top-2 left-2 z-20'
               onClick={() => setSidebarOpened(!sidebarOpened)}>☰</Button>
       <Sidebar opened={sidebarOpened}/>
       <div className='flex flex-1 items-center justify-center'><Board/></div>
